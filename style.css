@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*to jest nawigacja*/
+ .nav {
+	height: 50px;
+	background-color: #333;
+	text-align: center; /*wysirodkowanie napisów*/
+	line-height: 50px; /*wysirodkowanie napisów wedłóg osi y*/
+ }
+ .nav-item {
+	display: inline-block; /*układa napisy w jednej lini*/
+ }
+ .nav-item a {
+	padding: 0 50px;
+	color: #fff;
+	text-decoration: none; /*usówa podkreślenia*/
+	text-transform: uppercase;/*powiększenie napisów*/
+	font-weight: bold;/*pogróbirnie liter*/
+	letter-spacing: 2px;/*odstępy między znakami*/
+	transition: color 1s; /*nadanie szybkości zmiany przedmiotom*/
+ }
+ .nav-item a:hover {    /*zmiana na przedmiotach*/
+	color: #0086f3;
+ }
+
+ /*to jest heder*/
+.header-img {
+	position: relative;
+	height: 300px;
+	background-image: url("./img/4.jpg");/*dodawanie grafiki (pamiętać o kropce pezed img)*/
+	background-size: cover;/*ustawie grafikę*/
+	background-position: 0 50%;
+}
+
+.header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	z-index: 2;/*powoduje że nasz tekst jest nad obrazkiem można go zaznaczyć*/
+}
+
+.header-text h1 {
+	margin-bottom: 10px;/*odsówa tekst */
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.header-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(218, 187, 37, 0.3);
+}
+
+main {
+	margin: 50px auto;
+	width: 1200px;
+}
+
+main h2 {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.about-us-box {
+	position: relative;
+	height: 300px;
+	margin: 40px 0;
+	background-attachment: fixed;
+	background-position: center;
+	border-top-left-radius: 50px;/*zaokrąglenie dolnego lewego rogu*/
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+}
+.top {
+	background-image: url(./img/1.jpg);
+}
+.middle {
+	background-image: url(./img/2.jpg);
+}
+.bottom {
+	background-image: url(./img/3.jpg);
+}
+
+.about-us-text h3 {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.about-us-text {
+	position: absolute;/*pozycjonowanie wedłóg rodzica*/
+	bottom: 20px;/*opuszczenie tekstu na dół*/
+	text-align: center;/*wysirodkowanie tekstu*/
+	padding: 20px 40px;/*dodanie wewnątrz marginesów*/
+	color: #ddd;
+}
+
+.about-us-bg {
+	position: absolute;
+	bottom: 0;
+	height: 60%;/*odwolanie się do wysokości cienia napisów*/
+	width: 100%;
+	background-color: rgb(0, 0, 0,.8);
+}
+
+/*odwołujemy się do footer*/
+
+footer {
+	height: 80px;
+	line-height: 80px; /*wysirodkowanie napisów*/
+	background-color: #333;
+	color: #ddd;
+	text-align: center;/*wysirodkowanie napisów*/
+	font-size: 20px;/*rozmiar czcionki*/
+}
+
+.icon-box {
+	margin-left: 20px;
+}
+
+.icon-box a {
+	margin: 0 5px;
+	color: #ddd;
+	font-size: 30px;
+	transition: color 1s;
+}
+
+.icon-box a:hover {
+	color: #0086f3;
+}
+
+/*usługi*/
+.services-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 20px;
+    margin: 0 auto;
+    width: 400px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Cennik*/
+.prices-table {
+	margin: 0 auto;
+}
+.prices-table td {
+	padding: 10px 30px;
+}
+
+/*kontakty*/
+.contact-info {
+	text-align: center;
+	font-size: 25px;
+}
+.contact-info .fas {
+	margin-right: 10px;
+}
